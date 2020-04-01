@@ -1,0 +1,21 @@
+#main-top {
+    width: 100%;
+    height: 70px;
+    background: url(main-top-bg.png) no-repeat right center #2d62a3;
+    border-bottom: 1px #245086 solid;
+}
+#main-top .grid {
+    width: 96%;
+    margin: 0px auto;
+}
+.grid {
+    width: 86%;
+    margin: 0px auto;
+    position: relative;
+}
+
+.grid {
+    border-color: #e8eef9;
+    margin: 0px 0px 0px 0px;
+    font-size: 13px;
+}
