@@ -154,13 +154,13 @@
         <li>
             <a href="#">信息管理</a>
             <ul class="second-ul second-ul-right">
-                <li><a href="/eams/thesis/topic/topic-for-std.action" target="iframeMain" onclick="return openUrl(this)">学生信息管理</a></li>
+                <li><a href="/addinformation" target="iframeMain" onclick="return openUrl(this)">学生信息管理</a></li>
 
                 <li><a href="/eams/stdDetail.action" target="iframeMain" onclick="return openUrl(this)">审核学生加分申请</a></li>
 
                 <li><a href="/eams/thesis/result/student.action" target="iframeMain" onclick="return openUrl(this)">修改个人密码</a></li>
 
-                <li><a href="/eams/stdTextbookOrderLine.action" target="iframeMain" onclick="return openUrl(this)">查看公告</a></li>
+                <li><a href="/eams/stdTextbookOrderLine.action" target="iframeMain" onclick="return openUrl(this)">学生成绩管理</a></li>
 
                 <li><a href="/eams/courseTableForStd.action" target="iframeMain" onclick="return openUrl(this)">我的课表</a></li>
 
