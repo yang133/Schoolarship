@@ -1,11 +1,9 @@
 package com.controller;
 
 import com.service.UserService;
-import com.sun.javafx.collections.MappingChange;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpSession;
 import java.util.Map;
@@ -33,6 +31,22 @@ public class UserController {
     @RequestMapping("/a")
     public String a() {
         return "a";
+    }
+    @RequestMapping("/test")
+    public String test() {
+        return "teacher/test";
+    }
+    @RequestMapping("/notice")
+    public String notice() {
+        return "notice";
+    }
+    @RequestMapping("/ss")
+    public String ss() {
+        return "ss";
+    }
+    @RequestMapping("/kuangjia")
+    public String kuangjia() {
+        return "kuangjia";
     }
 
     //方法类

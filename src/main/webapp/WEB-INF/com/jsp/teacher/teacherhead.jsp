@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: 杨珊珊
-  Date: 2020/3/31
-  Time: 19:56
+  Date: 2020/4/2
+  Time: 22:47
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -183,6 +183,6 @@
         </li>
     </ul>
 </div>
-<jsp:include page="ss.jsp"></jsp:include>
+
 </body>
 </html>
