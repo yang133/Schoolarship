@@ -23,6 +23,12 @@ public class UserController {
     public String main() {
         return "stumain";
     }
+
+    @RequestMapping("/jiaomain")
+    public String jiaomain() {
+        return "jiaomain";
+    }
+
     @RequestMapping("/teachermain")
     public String teachermain() {
         return "teachermain";
@@ -32,21 +38,30 @@ public class UserController {
     public String a() {
         return "a";
     }
+
     @RequestMapping("/test")
     public String test() {
         return "teacher/test";
     }
+
     @RequestMapping("/notice")
     public String notice() {
         return "notice";
     }
-    @RequestMapping("/ss")
+
+    @RequestMapping("/aside")
     public String ss() {
-        return "ss";
+        return "aside";
     }
-    @RequestMapping("/kuangjia")
-    public String kuangjia() {
-        return "kuangjia";
+
+    @RequestMapping("/toupdatepwd")
+    public String toupdatepwd() {
+        return "student/updatepwd";
+    }
+
+    @RequestMapping("/afterupdatepwd")
+    public String afterupdatepwd() {
+        return "student/afterupdatepwd";
     }
 
     //方法类
@@ -61,22 +76,36 @@ public class UserController {
             System.out.println(role);
             if (role.equals("学生")) {
                 return "redirect:/stumain";
-            }
-            else if (role.equals("教师")) {
+            } else if (role.equals("教师")) {
                 return "redirect:/teachermain";
-            }
-            else if (role.equals("教务处")) {
+            } else if (role.equals("教务处")) {
                 return "redirect:/jiaomain";
             }
 
         }
+        return "tologin";
+    }
+    @RequestMapping("/logout")
+    public String logout(){
+        return"/tologin";
+    }
 
-        return  "tologin";
+    @RequestMapping("/updatepwd")
+    public String updatepwd(Integer password, HttpSession session) {
+        Map map = (Map) session.getAttribute("user");
+        Integer no = (Integer) map.get("no");
+        userService.updatepwd(no, password);
+        return "redirect:/afterupdatepwd";
+
     }
 
 
-
 }
+
+
+
+
+
 
 
 

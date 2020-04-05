@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: 杨珊珊
-  Date: 2020/4/2
-  Time: 22:47
+  Date: 2020/3/31
+  Time: 19:56
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -132,16 +132,11 @@
             <button type="button" /><span class="fa fa-search"></span></button>
             <div class="down-box" style="display:none">
                 <ul>
-                    <li style="display:none"><a href="/eams/thesis/topic/topic-for-std.action" target="iframeMain" onclick="return openUrl(this)" oriName="毕设自主选题">我的账户</a></li>
-                    <li style="display:none"><a href="/eams/stdDetail.action" target="iframeMain" onclick="return openUrl(this)" oriName="学籍信息">我的信息</a></li>
-                    <li style="display:none"><a href="/eams/thesis/result/student.action" target="iframeMain" onclick="return openUrl(this)" oriName="毕业论文">申请奖学金</a></li>
-                    <li style="display:none"><a href="/eams/stdTextbookOrderLine.action" target="iframeMain" onclick="return openUrl(this)" oriName="教材选定">教材选定</a></li>
-                    <li style="display:none"><a href="/eams/courseTableForStd.action" target="iframeMain" onclick="return openUrl(this)" oriName="我的课表">我的课表</a></li>
-                    <li style="display:none"><a href="/eams/stdElectCourse.action" target="iframeMain" onclick="return openUrl(this)" oriName="选课">选课</a></li>
-                    <li style="display:none"><a href="/eams/stdExamTable.action" target="iframeMain" onclick="return openUrl(this)" oriName="我的考试">我的考试</a></li>
-                    <li style="display:none"><a href="/eams/teach/grade/course/person.action" target="iframeMain" onclick="return openUrl(this)" oriName="我的成绩">我的成绩</a></li>
-                    <li style="display:none"><a href="/eams/quality/stdEvaluate.action" target="iframeMain" onclick="return openUrl(this)" oriName="量化评教">量化评教</a></li>
-                </ul>
+                    <li style="display:none"><a href="/eams/thesis/topic/topic-for-std.action" target="iframeMain" onclick="return openUrl(this)" oriName="毕设自主选题">修改个人密码</a></li>
+                    <li style="display:none"><a href="/eams/stdDetail.action" target="iframeMain" onclick="return openUrl(this)" oriName="学籍信息">公告管理</a></li>
+                    <li style="display:none"><a href="/eams/thesis/result/student.action" target="iframeMain" onclick="return openUrl(this)" oriName="毕业论文">奖学金初始申请表管理</a></li>
+                    <li style="display:none"><a href="/eams/stdTextbookOrderLine.action" target="iframeMain" onclick="return openUrl(this)" oriName="教材选定">查看学生申请名单</a></li>
+                    <li style="display:none"><a href="/eams/courseTableForStd.action" target="iframeMain" onclick="return openUrl(this)" oriName="我的课表">学生申请表下载管理</a></li>
                 <ul>
                     <li style="display:none"><a href="javascript:void(0);" >没有搜索结果</a></li>
                 </ul>
@@ -153,36 +148,26 @@
         <li><a href="/eams/homeExt!main.action" target="iframeMain" onclick="return openUrl(this)" style="outline:none">首页</a></li>
 
         <li>
-            <a href="#">信息管理</a>
+            <a href="#">我的</a>
             <ul class="second-ul second-ul-right">
-                <li><a href="/addinformation" target="iframeMain" onclick="return openUrl(this)">学生信息管理</a></li>
+                <li><a href="/toupdatepwd"  >修改个人密码</a></li>
 
-                <li><a href="/eams/stdDetail.action" target="iframeMain" onclick="return openUrl(this)">审核学生加分申请</a></li>
+                <li><a href="/addinformation" target="iframeMain" onclick="return openUrl(this)">公告管理</a></li>
 
-                <li><a href="/eams/thesis/result/student.action" target="iframeMain" onclick="return openUrl(this)">修改个人密码</a></li>
-
-                <li><a href="/eams/stdTextbookOrderLine.action" target="iframeMain" onclick="return openUrl(this)">学生成绩管理</a></li>
-
-                <li><a href="/eams/courseTableForStd.action" target="iframeMain" onclick="return openUrl(this)">我的课表</a></li>
-
-                <li><a href="/eams/stdElectCourse.action" target="iframeMain" onclick="return openUrl(this)">选课</a></li>
-
-                <li><a href="/eams/stdExamTable.action" target="iframeMain" onclick="return openUrl(this)">我的考试</a></li>
-
-                <li><a href="/eams/teach/grade/course/person.action" target="iframeMain" onclick="return openUrl(this)">我的成绩</a></li>
 
             </ul>
         </li>
         <li>
             <a href="#">奖学金管理</a>
+
             <ul class="second-ul second-ul-right">
-                <li><a href="/eams/quality/stdEvaluate.action" target="iframeMain" onclick="return openUrl(this)">综合成绩奖学金</a></li>
-                <li><a href="/eams/stdExamTable.action" target="iframeMain" onclick="return openUrl(this)">待申请奖学金</a></li>
-                <li><a href="/eams/stdExamTable.action" target="iframeMain" onclick="return openUrl(this)">奖学金申请结果</a></li>
+                <li><a href="/toupdatepwd"  >奖学金初始申请表管理</a></li>
+                <li><a href="/eams/stdTextbookOrderLine.action" target="iframeMain" onclick="return openUrl(this)">查看学生申请名单</a></li>
+                <li><a href="/eams/stdTextbookOrderLine.action" target="iframeMain" onclick="return openUrl(this)">学生申请表下载管理</a></li>
             </ul>
         </li>
     </ul>
 </div>
-
+<jsp:include page="aside.jsp"></jsp:include>
 </body>
 </html>

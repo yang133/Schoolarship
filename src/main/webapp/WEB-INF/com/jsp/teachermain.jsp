@@ -101,7 +101,7 @@
         </a>
 
         <div class="right-menu">
-            <a href="/eams/logoutExt.action" class="login-out"><span class="fa fa-power-off"></span> </a>
+            <a href="logout" class="login-out"><span class="fa fa-power-off"></span> </a>
             <div class="personal-list">
                 <div class="pic">
                     <div class="mask"></div>
@@ -155,27 +155,23 @@
         <li>
             <a href="#">信息管理</a>
             <ul class="second-ul second-ul-right">
+                <li><a href="/toupdatepwd"  >修改个人密码</a></li>
+
+                <li><a href="/eams/stdTextbookOrderLine.action" target="iframeMain" onclick="return openUrl(this)">学生成绩管理</a></li>
+
                 <li><a href="/addinformation" target="iframeMain" onclick="return openUrl(this)">学生信息管理</a></li>
 
                 <li><a href="/eams/stdDetail.action" target="iframeMain" onclick="return openUrl(this)">审核学生加分申请</a></li>
 
-                <li><a href="/eams/thesis/result/student.action" target="iframeMain" onclick="return openUrl(this)">修改个人密码</a></li>
 
-                <li><a href="/eams/stdTextbookOrderLine.action" target="iframeMain" onclick="return openUrl(this)">学生成绩管理</a></li>
 
-                <li><a href="/eams/courseTableForStd.action" target="iframeMain" onclick="return openUrl(this)">我的课表</a></li>
-
-                <li><a href="/eams/stdElectCourse.action" target="iframeMain" onclick="return openUrl(this)">选课</a></li>
-
-                <li><a href="/eams/stdExamTable.action" target="iframeMain" onclick="return openUrl(this)">我的考试</a></li>
-
-                <li><a href="/eams/teach/grade/course/person.action" target="iframeMain" onclick="return openUrl(this)">我的成绩</a></li>
 
             </ul>
         </li>
         <li>
             <a href="#">奖学金管理</a>
             <ul class="second-ul second-ul-right">
+                <li><a href="/eams/stdTextbookOrderLine.action" target="iframeMain" onclick="return openUrl(this)">提交学生申请名单</a></li>
                 <li><a href="/eams/quality/stdEvaluate.action" target="iframeMain" onclick="return openUrl(this)">综合成绩奖学金</a></li>
                 <li><a href="/eams/stdExamTable.action" target="iframeMain" onclick="return openUrl(this)">待申请奖学金</a></li>
                 <li><a href="/eams/stdExamTable.action" target="iframeMain" onclick="return openUrl(this)">奖学金申请结果</a></li>
@@ -183,6 +179,6 @@
         </li>
     </ul>
 </div>
-<jsp:include page="ss.jsp"></jsp:include>
+<jsp:include page="aside.jsp"></jsp:include>
 </body>
 </html>

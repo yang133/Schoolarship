@@ -22,4 +22,8 @@ public class UserService {
         }
         return null;
     }
+
+    public void updatepwd(Integer no, Integer password) {
+        userDao.updatepwd(no,password);
+    }
 }

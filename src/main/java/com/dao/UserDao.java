@@ -15,4 +15,8 @@ public class UserDao {
         Map map=userMapper.getUser(no);
         return map;
     }
+
+    public void updatepwd(Integer no, Integer password) {
+        userMapper.updatepwd(no,password);
+    }
 }
