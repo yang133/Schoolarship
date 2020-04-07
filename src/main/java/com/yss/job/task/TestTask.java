@@ -4,7 +4,7 @@ import com.yss.common.annotation.CronTag;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@CronTag("testTask")
+//@CronTag("testTask")
 public class TestTask {
 
     private Logger log = LoggerFactory.getLogger(this.getClass());
