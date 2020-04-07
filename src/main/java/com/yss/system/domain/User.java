@@ -40,6 +40,10 @@ public class User implements Serializable {
 	@Column(name = "USER_ID")
 	private Long userId;
 
+	@Column(name = "student_id")
+	@ExportConfig(value = "教工号/学号")
+	private Integer studentId;
+
 	@Column(name = "USERNAME")
 	@ExportConfig(value = "用户名")
 	private String username;
@@ -104,6 +108,14 @@ public class User implements Serializable {
 	 */
 	public void setUserId(Long userId) {
 		this.userId = userId;
+	}
+
+	public Integer getStudentId() {
+		return studentId;
+	}
+
+	public void setStudentId(Integer studentId) {
+		this.studentId = studentId;
 	}
 
 	/**

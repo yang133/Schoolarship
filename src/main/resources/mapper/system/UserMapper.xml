@@ -6,6 +6,7 @@
       WARNING - @mbg.generated
     -->
     <id column="USER_ID" jdbcType="DECIMAL" property="userId" />
+    <result column="student_id" jdbcType="INTEGER" property="studentId" />
     <result column="USERNAME" jdbcType="VARCHAR" property="username" />
     <result column="PASSWORD" jdbcType="VARCHAR" property="password" />
     <result column="DEPT_ID" jdbcType="DECIMAL" property="deptId" />
